@@ -1,8 +1,35 @@
 ## Java Texts
+ 
+ My recomendation use [agilefindres](https://agilefingers.com/custom-texts)
+
 
 ### Java Words Reservate Complete
 ```java
 java package import abstract class interface enum record implements extends public private protected synchronized strictfp transient volatile native static void final for do while continue if else switch case break default try catch finally return boolean byte char int short long float double String new this super instanceof throw throws assert
+```
+
+### Java Flow Control
+
+```java
+java if else switch case break default do while for try catch finally throw return 
+```
+
+### Java Variabel
+
+```java
+java boolean byte char int short long float double String Integer Double BigInteger BigDecimal new
+```
+
+### Java Util Time  Instant
+
+```java
+java Instant.now() Instant.ofEpochSecond() Instant.ofEpochMilli() Instant.plus() Instant.minus() Instant.isBefore() Instant.isAfter() Instant.compareTo()
+```
+
+### Java Util Time Durant
+
+```java
+java Durant.ofDays() Durant.ofHours() Durant.ofMinutes() Durant.ofSeconds() Durant.ofMilli() Durant.between() Durant.plus() Durant.minus()
 ```
 
 ### Java Example API Stream
