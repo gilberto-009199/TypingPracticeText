@@ -22,10 +22,10 @@ lista.add("two");
 lista.add("tree");
 lista.add("five");
 for(String fruta : lista){
-System.out.println(fruta);
+out.println(fruta);
 }
 for(int i = 0; i < lista.size(); i++){
-System.out.println(lista.get(i));
+out.println(lista.get(i));
 }
 ```
 ### Java Example In And Output
@@ -33,9 +33,46 @@ System.out.println(lista.get(i));
 Scanner scanner = new Scanner(System.in);
 String in = scanner.nextLine();
 if(in.equals("gil")){
-System.out.println("equals == 'gil'.");
+out.println("equals == 'gil'.");
 }else{
-System.out.println("not equals != 'gil'");
+out.println("not equals != 'gil'");
 }
 scanner.close();
+```
+### Java Example Set
+```java
+Set<String> conjunto = new HashSet<>();
+conjunto.add("one");
+conjunto.add("two");
+conjunto.add("tree");
+if(conjunto.contains("tree")){
+out.println("tree in set.");
+}else{
+out.println("tree not in set");
+}
+conjunto.remove("tree");
+for(String fruta : conjunto){
+out.println(fruta);
+}
+```
+
+### Java Example Stack
+```java
+Stack<String> pilha = new Stack<>();
+pilha.push("one");
+pilha.push("two");
+pilha.push("tree");
+out.println("top in stack:"+ pilha.peek());
+out.println("remove top in stack:"+ pilha.pop());
+if(pilha.isEmpty()){
+out.println("stack empty");
+}else{
+out.println("stack not empty");
+}
+int posicao = pilha.search("tree");
+if(posicao != -1){
+out.println("the 'tree' in position: " + posicao);
+}else{
+out.println("the 'tree' not in stack");
+}
 ```
