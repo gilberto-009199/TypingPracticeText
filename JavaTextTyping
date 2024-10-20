@@ -1,0 +1,41 @@
+## Java Texts
+
+### Java Words Reservate Complete
+```java
+java package import abstract class interface enum record implements extends public private protected synchronized strictfp transient volatile native static void final for do while continue if else switch case break default try catch finally return boolean byte char int short long float double String new this super instanceof throw throws assert
+```
+
+### Java Example API Stream
+```java
+int[] numeros = {1, 2, 3};
+IntStream stream = Arrays.stream(numeros).filter(n -> n % 2 == 0);
+stream.forEach(System.out::println);
+int soma = Arrays.stream(numeros).sum();
+String[] frutas = {"Maçã", "Banana", "Laranja"};
+Arrays.stream(frutas).map(String::toUpperCase).forEach(System.out::println);
+long count = Arrays.stream(frutas).filter(f -> f.length() > 5).count();
+```
+### Java Example List Simple 
+```java
+List<String> lista = new ArrayList<>();
+lista.add("two");
+lista.add("tree");
+lista.add("five");
+for(String fruta : lista){
+System.out.println(fruta);
+}
+for(int i = 0; i < lista.size(); i++){
+System.out.println(lista.get(i));
+}
+```
+### Java Example In And Output
+```java
+Scanner scanner = new Scanner(System.in);
+String in = scanner.nextLine();
+if(in.equals("gil")){
+System.out.println("equals == 'gil'.");
+}else{
+System.out.println("not equals != 'gil'");
+}
+scanner.close();
+```
